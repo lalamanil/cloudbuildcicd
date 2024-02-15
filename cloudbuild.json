@@ -5,7 +5,7 @@
          "args":[
             "build",
             "-t",
-            "us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:v2",
+            "us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:new",
             "."
          ]
       },
@@ -13,7 +13,7 @@
          "name":"gcr.io/cloud-builders/docker",
          "args":[
             "push",
-            "us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:v2"
+            "us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:new"
          ]
       },
       {
@@ -21,13 +21,13 @@
          "args":[
             "run",
             "--filename=deployment.yaml",
-            "--image=us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:v2",
+            "--image=us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:new",
             "--location=us-central1-a",
             "--cluster=springbootcluster"
          ]
       }
    ],
    "images":[
-      "us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:v2"
+      "us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:new"
    ]
 }

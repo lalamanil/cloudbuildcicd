@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: springbootapptotestcicd
-          image: us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:feb15
+          image: us-central1-docker.pkg.dev/gmemoridev2016/cicd-cloud-build/heahealthcheckimage:new
           ports:
             - containerPort: 8080
 
